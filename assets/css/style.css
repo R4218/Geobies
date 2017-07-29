@@ -1,0 +1,698 @@
+/* 
+***************************************************************************
+
+   ------------------------------------------
+------------------------------------------
+Template Name: "Geobies HTML5 Template :: RAZIBUR"
+Template URI: http://razib.host22.com/portfolio/
+Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+Author: MD. RAZIBUR RAHMAN
+Author URI: http://razib.host22.com
+Version: 1.0
+------------------------------------------
+   ------------------------------------------
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below>>>>>
+
+   ------------------------------------------
+------------------------------------------
+*** - Global Style
+*** - Geobies BTN
+*** - Navigation
+*** - Sticky Menu
+*** - Hero Area
+*** - About box
+*** - Services
+*** - On Time Job
+*** - Testimonail
+*** - Brand
+*** - Start Porject
+*** - Scroll To Top
+*** - Footer
+------------------------------------------
+   ------------------------------------------
+
+***************************************************************************
+*/
+
+/*
+  Global Style
+================================ */
+@font-face {
+  font-family: GothamRounded Book;
+  src: url(../fonts/GothamRoundedBook.woff);
+}
+*{padding:0; margin:0;}
+a, a:active, a:focus, a:hover{
+    outline:none;
+    text-decoration:none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+p, 
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    font-size: 16px;
+    color: #8e8e93;
+}
+
+/*
+  Geobies BTN    
+================================ */
+.geobies-btn {
+  background: #ff298d none repeat scroll 0 0;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  z-index: 1;
+}
+.geobies-btn:after {
+  background: #f4effc none repeat scroll 0 0;
+  border-radius: 50px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.geobies-btn:hover:after {
+  bottom: 50%;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  top: 50%;
+}
+.geobies-btn:hover{
+  color: #333;
+}
+
+.section-padding{
+  padding: 152px 0;
+}
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section-header h2 {
+  color: #333333;
+  font-size: 36px;
+  font-weight: 300;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/*
+  Navigation
+================================ */
+.navigation-area {
+  padding-top: 68px;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.navigation-area .navbar-nav {
+  float: none;
+  text-align: right;
+}
+.navigation-area .navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+.navigation-area .navbar-nav > li a:hover, 
+.navigation-area .navbar-nav > li a:focus{
+  background: transparent none repeat scroll 0 0;
+}
+.navigation-area .navbar-nav > li > a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 15px 17px;
+  position: relative;
+}
+.navigation-area .navbar-nav > li > a:before {
+  background: #f4effc none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.navigation-area .navbar-nav > li > a:hover:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.navigation-area .navbar-nav > li > a:hover {
+  color: #f4effc;
+}
+.navigation-area .navbar-nav > li > a.geobies-btn:before {
+  display: none;
+}
+.navigation-area .navbar-nav > li > a.geobies-btn:hover{
+  background: #ff298d;
+  color: #333;
+}
+.navigation-area .navbar-nav > li > a.geobies-btn {
+  line-height: 1;
+  margin-left: 5px;
+  padding: 15px 30px;
+}
+.navigation-area .navbar-nav > li > a.geobies-btn:focus{
+  background: #ff298d;
+}
+
+/*
+  Sticky Menu
+================================ */
+#sticky-wrapper{
+  height: auto !important;
+}
+.is-sticky .navigation-area {
+  background: #563fd2 none repeat scroll 0 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.navigation-area .nav.navbar-nav {
+  margin-top: 3px;
+}
+
+/*
+  Hero Area
+================================ */
+.hero-area {
+  padding-top: 127px;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.tabel-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hero-area, 
+.background-shape{
+  background: -webkit-linear-gradient(45deg, #473ed0 15%, #fa4be7 85%) no-repeat scroll center center / cover ;
+  background: -webkit-linear-gradient(45deg, #473ed0 15%, #fa4be7 85%) no-repeat scroll center center / cover ;
+  background: linear-gradient(45deg, #473ed0 15%, #fa4be7 85%) no-repeat scroll center center / cover ;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.hero-area:after,
+.background-shape:after{
+  background-image: url(../img/banner-bg.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.background-shape {
+  height: auto;
+}
+.video-icon > a {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 70px;
+  z-index: 1;
+}
+.video-icon > a:after {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.video-icon > a:hover:after {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.video-icon > a:hover {
+  color: #ff298d;
+}
+
+.header-content h1 {
+  color: #fff;
+  font-weight: 300;
+  padding: 30px 0;
+}
+.header-content > p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 48px;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+/*
+  About box
+================================ */
+.about-box {
+    border-radius: 3px;
+    box-shadow: 0 2px 17px rgba(0, 0, 0, 0.176);
+    min-height: 400px;
+    padding: 70px 80px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.about-box:after {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.about-box-1:after{background-image: url(../img/about/about-box-shape-1.png);}
+.about-box-2:after{background-image: url(../img/about/about-box-shape-2.png);}
+.about-box-3:after{background-image: url(../img/about/about-box-shape-3.png);}
+
+.about-icon {
+  display: table;
+  height: 88px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+.about-icon-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.about-icon:after {
+  color: #333333;
+  content: "";
+  font-family: GothamRounded Book;
+  font-size: 120px;
+  left: 50%;
+  line-height: 1;
+  margin-left: -36px;
+  min-width: 72px;
+  opacity: 0.05;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
+  position: absolute;
+  top: -15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.about-icon-1:after{  content: "1";}
+.about-icon-2:after{  content: "2";}
+.about-icon-3:after{  content: "3";}
+
+.about-box:hover {
+    box-shadow: 0 2px 17px rgba(0, 0, 0, 0.376);
+}
+.about-box:hover .about-icon:after {
+  color: #fc45d5;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+.about-box > p {
+  letter-spacing: 0.3px;
+}
+
+/*
+  Services
+================================ */
+#services {
+  background-color: #60099d;
+  padding-bottom: 62px;
+}
+#services .section-header h2 {
+  color: #fff;
+}
+#services .section-header p {
+  color: #fff;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.services-box{
+  color: #fff;
+  margin-bottom: 90px;
+  padding: 2px 20px;
+  text-align: center;
+}
+.services-box a{
+  color: #fff;
+}
+.services-box p {
+  letter-spacing: 0.3px;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.services-box h5 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 50px 0 30px;
+  text-transform: uppercase;
+}
+.service-icon i.fa {
+  color: #fff;
+  font-size: 24px;
+}
+
+/*
+  On Time Job
+================================ */
+#ontimeJob{
+    background-image: url(../img/ontimeJob.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+#ontimeJob:after{
+    background: #293440;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: .85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+.job-box{
+    position: relative;
+}
+.job-offer-box {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.075);
+  color: #000;
+  margin-bottom: -30px;
+  margin-top: -30px;
+  padding: 90px 65px 110px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.job-offer-box:after {
+  background-image: url(../img/job-offer-shape.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.job-offer-box > h2 {
+  color: #333;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1;
+}
+.job-offer-box > h2 sub {
+  font-size: 45px;
+  top: 0;
+}
+.job-offer-box > p {
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  padding-bottom: 40px;
+  padding-top: 18px;
+}
+.job-offer-content {
+  padding-top: 135px;
+}
+.job-offer-content h3 {
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  line-height: 40px;
+}
+
+/*
+  Testimonail
+================================ */
+#testimonial {
+  padding-bottom: 145px;
+  padding-top: 180px;
+}
+#testimonial .section-header > h2 {
+  padding: 0;
+  text-transform: capitalize;
+}
+#testimonial .section-header {
+  margin-bottom: 45px;
+}
+.testimonial-single-item {
+  padding: 0 80px;
+  text-align: center;
+}
+.testimonial-single-item p {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  line-height: 34px;
+}
+.testimonial-single-item h4 {
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.testimonial-single-item h4 span, 
+.testimonial-single-item h5 {
+  color: #aaa;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+.testimonial-slides .owl-dots {
+  margin-top: 95px;
+  text-align: center;
+}
+.testimonial-slides .owl-dots div {
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px;
+  width: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.testimonial-slides .owl-dots div.active {
+  background: #333333;
+  border-color: #333333;
+}
+
+/*
+  Brand
+================================ */
+#brand {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding: 60px 0;
+}
+.brand-single-item > a {
+  background: #f5f5f5 none repeat scroll 0 0;
+  display: inline-block;
+  line-height: 70px;
+  min-height: 70px;
+  padding: 0 20px;
+  text-align: center;
+}
+.brand-slides .owl-item .brand-single-item img {
+  display: inline-block;
+}
+.brand-slides .owl-item .brand-single-item {
+  text-align: center;
+}
+
+/*
+  Start Porject
+================================ */
+#start-project {
+  background: #2b3540 none repeat scroll 0 0;
+  background-image: url(../img/start-project-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 103px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#start-project:after {
+    background: #293440;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: .85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+#start-project h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 36px;
+  padding-bottom: 20px;
+}
+
+/*
+  Scroll To Top
+================================ */
+.ScrollToTop {
+  bottom: 50px;
+  position: fixed;
+  right: 30px;
+  display: none;
+  z-index: 1;
+}
+.ScrollToTop a {
+  background: rgba(86, 63, 210, 0.5);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 40px;
+  z-index: 1;
+}
+.ScrollToTop a:after {
+  background: #563FD2 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.ScrollToTop a:hover{
+  color: #FF298D;
+}
+.ScrollToTop a:hover:after {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/*
+  Footer
+================================ */
+footer {
+  background: #1a1a1a none repeat scroll 0 0;
+  padding: 45px 0;
+}
+.footer-nav {
+  text-align: right;
+}
+.footer-nav li {
+  display: inline-block;
+}
+.footer-nav a {
+  color: #fff;
+  display: block;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  padding: 15px 35px 15px 0;
+  text-transform: capitalize;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.footer-nav a:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}

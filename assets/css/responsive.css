@@ -1,0 +1,140 @@
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ 
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+	.hero-area {
+		height: 600px;
+	}
+	.video-icon .video_play_btn {
+		display: inline-block;
+	}
+	.about-box{
+		width: 60%;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	#about > div > div.row > div:last-child div.about-box, 
+	.job-box {
+		margin-bottom: 0;
+	}
+	.section-header {
+		margin: auto;
+		width: 80%;
+	}
+	.services-box, .job-box, .job-offer-content {
+		width: 70%;
+		margin: auto;
+	}
+	.section-header, .services-box {
+		margin-bottom: 50px;
+	}
+	.job-offer-content, .footer-logo, .footer-nav, .video-icon, .hero-area{
+		text-align: center;
+	}
+	.job-offer-content {
+		padding: 100px 0;
+	}
+	.footer-nav {
+		margin-top: 30px;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+	nav.navigation-area {
+		padding: 0;
+	}
+	.navbar-header {
+		padding: 15px 0;
+	}
+	.navigation-area .navbar-toggle {
+		border-color: #fff;
+		margin-top: 11px;
+	}
+	.navigation-area .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navigation-area .navbar-nav > li {
+		display: block;
+		text-align: center;
+	}
+	.navigation-area .navbar-nav > li a{
+		padding: 10px 15px;
+	}
+	.navigation-area {
+		background: #563fd2 none repeat scroll 0 0;
+		padding: 15px 0;
+		position: relative;
+	}
+	.brand-logo {
+		margin-left: 15px;
+	}
+	.navigation-area .navbar-nav > li > a.geobies-btn {
+		display: inline-block;
+		margin: 5px 0 0;
+	}
+
+	.hero-area {
+		height: 350px;
+		padding: 0;
+		text-align: center;
+	}
+	.header-content h1 {
+		font-size: 30px;
+		padding: 5px 0;
+	}
+	.header-content > p {
+		font-size: 16px;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+	.video-icon .video_play_btn {
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+	.about-box {
+		margin-bottom: 50px;
+	}
+	#about > div > div.row > div:last-child div.about-box {
+		margin-bottom: 0;
+	}
+	.job-offer-box {
+		margin-bottom: 0;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.job-offer-content {
+		padding: 100px 0;
+		text-align: center;
+	}
+	.testimonial-single-item {
+		padding: 0;
+	}
+	.footer-logo {
+		text-align: center;
+	}
+	.footer-nav {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.footer-nav a {
+		padding: 10px;
+	}
+	.ScrollToTop {
+		bottom: 30px;
+	}
+	#about, #services, #brand, #brand, #start-project {
+		padding: 80px 0;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+ }
